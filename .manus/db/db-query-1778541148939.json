@@ -1,0 +1,110 @@
+{
+  "query": "SELECT id, propertyId, url FROM property_images WHERE propertyId = 270001 LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Egk8uiXNGPNVwB.root --database RjXs8LwMzfhP9Ljg6DvftQ --execute SELECT id, propertyId, url FROM property_images WHERE propertyId = 270001 LIMIT 20;",
+  "rows": [
+    {
+      "id": "150001",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539022391-areal view 1_ab6fea9b.jpg"
+    },
+    {
+      "id": "150002",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539022732-Areal view_9e366be9.jpg"
+    },
+    {
+      "id": "150003",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539023019-bath room_fb2465cc.jpg"
+    },
+    {
+      "id": "150004",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539023311-bed1_861b2d31.jpg"
+    },
+    {
+      "id": "150005",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539023600-bed2_912968a1.jpg"
+    },
+    {
+      "id": "150006",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539023927-bed3_da185269.jpg"
+    },
+    {
+      "id": "150007",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539024210-bed4_62b61aaa.jpg"
+    },
+    {
+      "id": "150008",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539024593-cinema room_c45d58d6.jpg"
+    },
+    {
+      "id": "150009",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539024881-dining room_b76bd8de.jpg"
+    },
+    {
+      "id": "150010",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539025178-dinning 1_5024dd35.jpg"
+    },
+    {
+      "id": "150011",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539025557-driveway 1_ff885666.jpg"
+    },
+    {
+      "id": "150012",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539025869-garden view_132027f5.jpg"
+    },
+    {
+      "id": "150013",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539026236-garden_072c723d.jpg"
+    },
+    {
+      "id": "150014",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539026532-gym_08007547.jpg"
+    },
+    {
+      "id": "150015",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539026820-Hallway_4f95ee3c.jpg"
+    },
+    {
+      "id": "150016",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539027113-kitchen 2_337e6a61.jpg"
+    },
+    {
+      "id": "150017",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539027403-kitchen_66fbf91e.jpg"
+    },
+    {
+      "id": "150018",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539027720-lounge area 2_764a4f3a.jpg"
+    },
+    {
+      "id": "150019",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539028032-lounge area_15d289b1.jpg"
+    },
+    {
+      "id": "150020",
+      "propertyId": "270001",
+      "url": "/manus-storage/properties/270001/1778539028327-pool area 1_93f4ea2e.jpg"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpropertyId\turl\n150001\t270001\t/manus-storage/properties/270001/1778539022391-areal view 1_ab6fea9b.jpg\n150002\t270001\t/manus-storage/properties/270001/1778539022732-Areal view_9e366be9.jpg\n150003\t270001\t/manus-storage/properties/270001/1778539023019-bath room_fb2465cc.jpg\n150004\t270001\t/manus-storage/properties/270001/1778539023311-bed1_861b2d31.jpg\n150005\t270001\t/manus-storage/properties/270001/1778539023600-bed2_912968a1.jpg\n150006\t270001\t/manus-storage/properties/270001/1778539023927-bed3_da185269.jpg\n150007\t270001\t/manus-storage/properties/270001/1778539024210-bed4_62b61aaa.jpg\n150008\t270001\t/manus-storage/properties/270001/1778539024593-cinema room_c45d58d6.jpg\n150009\t270001\t/manus-storage/properties/270001/1778539024881-dining room_b76bd8de.jpg\n150010\t270001\t/manus-storage/properties/270001/1778539025178-dinning 1_5024dd35.jpg\n150011\t270001\t/manus-storage/properties/270001/1778539025557-driveway 1_ff885666.jpg\n150012\t270001\t/manus-storage/properties/270001/1778539025869-garden view_132027f5.jpg\n150013\t270001\t/manus-storage/properties/270001/1778539026236-garden_072c723d.jpg\n150014\t270001\t/manus-storage/properties/270001/1778539026532-gym_08007547.jpg\n150015\t270001\t/manus-storage/properties/270001/1778539026820-Hallway_4f95ee3c.jpg\n150016\t270001\t/manus-storage/properties/270001/1778539027113-kitchen 2_337e6a61.jpg\n150017\t270001\t/manus-storage/properties/270001/1778539027403-kitchen_66fbf91e.jpg\n150018\t270001\t/manus-storage/properties/270001/1778539027720-lounge area 2_764a4f3a.jpg\n150019\t270001\t/manus-storage/properties/270001/1778539028032-lounge area_15d289b1.jpg\n150020\t270001\t/manus-storage/properties/270001/1778539028327-pool area 1_93f4ea2e.jpg\n",
+  "stderr": "",
+  "execution_time_ms": 266
+}

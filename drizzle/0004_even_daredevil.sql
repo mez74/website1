@@ -1,0 +1,1 @@
+ALTER TABLE `properties` ADD `currency` enum('GBP','USD','EUR','AED') DEFAULT 'GBP' NOT NULL;

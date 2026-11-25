@@ -1,0 +1,316 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* ── Michael Mackenzie Brand Fonts ─────────────────────────────────────────── */
+
+/* ── Michael Mackenzie Luxury Dark Theme ─────────────────────────────────── */
+:root {
+  --radius: 0.2rem;
+
+  /* Brand Colors */
+  --gold: oklch(70% 0.12 85);
+  --gold-dark: oklch(52% 0.10 75);
+
+  /* Semantic Tokens - Dark Luxury */
+  --background: oklch(8% 0 0);
+  --foreground: oklch(95% 0.01 90);
+  --card: oklch(11% 0 0);
+  --card-foreground: oklch(95% 0.01 90);
+  --popover: oklch(13% 0 0);
+  --popover-foreground: oklch(95% 0.01 90);
+  --primary: oklch(70% 0.12 85);
+  --primary-foreground: oklch(8% 0 0);
+  --secondary: oklch(16% 0 0);
+  --secondary-foreground: oklch(85% 0 0);
+  --muted: oklch(16% 0 0);
+  --muted-foreground: oklch(55% 0 0);
+  --accent: oklch(70% 0.12 85);
+  --accent-foreground: oklch(8% 0 0);
+  --destructive: oklch(55% 0.22 27);
+  --destructive-foreground: oklch(95% 0 0);
+  --border: oklch(22% 0.02 85);
+  --input: oklch(16% 0 0);
+  --ring: oklch(70% 0.12 85);
+  --chart-1: oklch(70% 0.12 85);
+  --chart-2: oklch(52% 0.10 75);
+  --chart-3: oklch(60% 0.11 80);
+  --chart-4: oklch(40% 0.08 70);
+  --chart-5: oklch(80% 0.08 90);
+  --sidebar: oklch(10% 0 0);
+  --sidebar-foreground: oklch(95% 0.01 90);
+  --sidebar-primary: oklch(70% 0.12 85);
+  --sidebar-primary-foreground: oklch(8% 0 0);
+  --sidebar-accent: oklch(16% 0 0);
+  --sidebar-accent-foreground: oklch(95% 0.01 90);
+  --sidebar-border: oklch(22% 0.02 85);
+  --sidebar-ring: oklch(70% 0.12 85);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Josefin Sans', 'Optima', 'Gill Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'GFS Didot', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+/* ── Brand Utility Classes ───────────────────────────────────────────────── */
+.brand-heading {
+  font-family: 'GFS Didot', 'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-subheading {
+  font-family: 'Josefin Sans', 'Optima', 'Gill Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.gold-text { color: oklch(70% 0.12 85); }
+
+.gold-gradient {
+  background: linear-gradient(135deg, oklch(75% 0.13 88) 0%, oklch(52% 0.10 75) 50%, oklch(75% 0.13 88) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, oklch(70% 0.12 85), transparent);
+}
+
+.luxury-card {
+  background: oklch(11% 0 0);
+  border: 1px solid oklch(22% 0.02 85);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.luxury-card:hover {
+  border-color: oklch(70% 0.12 85);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, oklch(70% 0.12 85), oklch(52% 0.10 75));
+  color: oklch(8% 0 0);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, oklch(76% 0.13 88), oklch(60% 0.11 78));
+  box-shadow: 0 4px 20px oklch(70% 0.12 85 / 0.4);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  border: 1px solid oklch(70% 0.12 85);
+  color: oklch(70% 0.12 85);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background: oklch(70% 0.12 85 / 0.1);
+  box-shadow: 0 4px 20px oklch(70% 0.12 85 / 0.2);
+}
+
+.mm-monogram {
+  width: 52px;
+  height: 52px;
+  border: 1.5px solid oklch(70% 0.12 85);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'GFS Didot', 'Didot', Georgia, serif;
+  font-size: 1rem;
+  color: oklch(70% 0.12 85);
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+}
+
+.property-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, oklch(8% 0 0 / 0.85) 0%, transparent 55%);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.7s ease forwards; }
+.animate-delay-100 { animation-delay: 0.1s; opacity: 0; }
+.animate-delay-200 { animation-delay: 0.2s; opacity: 0; }
+.animate-delay-300 { animation-delay: 0.3s; opacity: 0; }
+.animate-delay-400 { animation-delay: 0.4s; opacity: 0; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: oklch(8% 0 0); }
+::-webkit-scrollbar-thumb { background: oklch(28% 0.02 85); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: oklch(70% 0.12 85); }
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+}
+
+
+/* ── Autofill Override for Contact Form ─────────────────────────────────── */
+/* Override browser autofill styling to maintain brand colors */
+input:-webkit-autofill {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: oklch(75% 0 0) !important;
+  caret-color: oklch(75% 0 0) !important;
+  -webkit-box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+  box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+}
+
+input:-webkit-autofill:hover {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: oklch(75% 0 0) !important;
+  -webkit-box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+  box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: oklch(75% 0 0) !important;
+  -webkit-box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+  box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+}
+
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-text-fill-color: oklch(75% 0 0) !important;
+  -webkit-box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+  box-shadow: 0 0 0 1000px oklch(10% 0 0) inset !important, inset 0 0 0 2px oklch(70% 0.12 85 / 0.3) !important;
+}

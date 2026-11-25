@@ -1,0 +1,13 @@
+{
+  "query": "SELECT COUNT(*) as total_properties FROM properties;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Egk8uiXNGPNVwB.root --database RjXs8LwMzfhP9Ljg6DvftQ --execute SELECT COUNT(*) as total_properties FROM properties;",
+  "rows": [
+    {
+      "total_properties": "29"
+    }
+  ],
+  "messages": [],
+  "stdout": "total_properties\n29\n",
+  "stderr": "",
+  "execution_time_ms": 261
+}

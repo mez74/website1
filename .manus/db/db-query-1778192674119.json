@@ -1,0 +1,70 @@
+{
+  "query": "SELECT id, title, location, type, price, bedrooms, bathrooms, plotSize, buildSize, status FROM properties LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Egk8uiXNGPNVwB.root --database RjXs8LwMzfhP9Ljg6DvftQ --execute SELECT id, title, location, type, price, bedrooms, bathrooms, plotSize, buildSize, status FROM properties LIMIT 10;",
+  "rows": [
+    {
+      "id": "30001",
+      "title": "London Central Penthouse",
+      "location": "London",
+      "type": "apartment",
+      "price": "5000000.00",
+      "bedrooms": "5",
+      "bathrooms": "4",
+      "plotSize": "0",
+      "buildSize": "4567",
+      "status": "available"
+    },
+    {
+      "id": "60001",
+      "title": "Penthouse Central London",
+      "location": "London",
+      "type": "apartment",
+      "price": "80000000.00",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "plotSize": "0",
+      "buildSize": "4500",
+      "status": "available"
+    },
+    {
+      "id": "180003",
+      "title": ".lfhglsfv",
+      "location": "Marbella",
+      "type": "house",
+      "price": "554.00",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "plotSize": "4",
+      "buildSize": "4",
+      "status": "available"
+    },
+    {
+      "id": "180004",
+      "title": "marbella penthouse",
+      "location": "Marbella",
+      "type": "house",
+      "price": "4321512.00",
+      "bedrooms": "4",
+      "bathrooms": "4",
+      "plotSize": "3",
+      "buildSize": "3",
+      "status": "available"
+    },
+    {
+      "id": "210001",
+      "title": "london penthouse",
+      "location": "Marbella",
+      "type": "house",
+      "price": "436246.00",
+      "bedrooms": "43",
+      "bathrooms": "435",
+      "plotSize": "q345",
+      "buildSize": "43",
+      "status": "available"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\tlocation\ttype\tprice\tbedrooms\tbathrooms\tplotSize\tbuildSize\tstatus\n30001\tLondon Central Penthouse\tLondon\tapartment\t5000000.00\t5\t4\t0\t4567\tavailable\n60001\tPenthouse Central London\tLondon\tapartment\t80000000.00\t4\t4\t0\t4500\tavailable\n180003\t.lfhglsfv\tMarbella\thouse\t554.00\t4\t4\t4\t4\tavailable\n180004\tmarbella penthouse\tMarbella\thouse\t4321512.00\t4\t4\t3\t3\tavailable\n210001\tlondon penthouse\tMarbella\thouse\t436246.00\t43\t435\tq345\t43\tavailable\n",
+  "stderr": "",
+  "execution_time_ms": 259
+}

@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `properties` ADD `currency` enum('GBP','USD','EUR','AED') DEFAULT 'GBP' NOT NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Egk8uiXNGPNVwB.root --database RjXs8LwMzfhP9Ljg6DvftQ --execute ALTER TABLE `properties` ADD `currency` enum('GBP','USD','EUR','AED') DEFAULT 'GBP' NOT NULL;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 578
+}

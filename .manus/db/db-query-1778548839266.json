@@ -1,0 +1,40 @@
+{
+  "query": "SELECT id, title, price, currency FROM properties ORDER BY id DESC LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 3Egk8uiXNGPNVwB.root --database RjXs8LwMzfhP9Ljg6DvftQ --execute SELECT id, title, price, currency FROM properties ORDER BY id DESC LIMIT 5;",
+  "rows": [
+    {
+      "id": "300007",
+      "title": "Exceptional Country Estate for Sale in the Algarve - With Commercial Golden Visa Licence",
+      "price": "9650000.00",
+      "currency": "EUR"
+    },
+    {
+      "id": "300006",
+      "title": "Modern Luxury Villa with Sea Views – Porto de Mós, Lagos",
+      "price": "2650000.00",
+      "currency": "EUR"
+    },
+    {
+      "id": "300005",
+      "title": "7 Bedroom Luxury Estate with Multiple Income Streams",
+      "price": "2700000.00",
+      "currency": "EUR"
+    },
+    {
+      "id": "300004",
+      "title": "Luxury Living in the Heart of the Algarve",
+      "price": "2750000.00",
+      "currency": "EUR"
+    },
+    {
+      "id": "210025",
+      "title": "Marbella Elite Property",
+      "price": "3200000.00",
+      "currency": "GBP"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttitle\tprice\tcurrency\n300007\tExceptional Country Estate for Sale in the Algarve - With Commercial Golden Visa Licence\t9650000.00\tEUR\n300006\tModern Luxury Villa with Sea Views – Porto de Mós, Lagos\t2650000.00\tEUR\n300005\t7 Bedroom Luxury Estate with Multiple Income Streams\t2700000.00\tEUR\n300004\tLuxury Living in the Heart of the Algarve\t2750000.00\tEUR\n210025\tMarbella Elite Property\t3200000.00\tGBP\n",
+  "stderr": "",
+  "execution_time_ms": 269
+}
